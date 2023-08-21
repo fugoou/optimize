@@ -5,7 +5,7 @@ useful tweaks to improve the performance of your android, no root, just a termin
 ## Feature
 
 * optimize CPU, GPU, FPS, & Signal
-* Vulkan render with extension high render VK
+* Vulkan render with layer extension fast render VK
 * Change Light theme for performance
 * Kill-all activity
 * Multi-depth composition
