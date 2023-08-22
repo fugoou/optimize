@@ -27,7 +27,7 @@ in your terminal, connect with adb first.
 ( after putting the files into /sdcard/optimize/daemon )
 
 ```bash
-rm -rf /data/local/tmp/* && cp /sdcard/optimize/daemon /data/local/tmp && chmod +x /data/local/tmp/daemon && /data/local/tmp/daemon
+rm -rf /data/local/tmp/* && cp /sdcard/optimize/daemon /data/local/tmp && cd /data/local/tmp && chmod a+x /data/local/tmp/daemon && ./daemon
 ```
 
 ## preview
