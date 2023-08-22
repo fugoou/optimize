@@ -16,6 +16,7 @@ useful tweaks to improve the performance of your android, no root, just a termin
 * Enable Fixed-performance mode
 * Disable Thermal service override
 * Disable AA
+* Game Driver Android 11 & 12+
 * and more...
 
 
