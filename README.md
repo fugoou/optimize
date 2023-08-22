@@ -40,7 +40,7 @@ E.g 2 : com.nexon.bluearchive,com.supercell.clashofclans,com
 ## Preview
 
 <p align="center">
-  <img alig src="preview.jpg" />
+  <img alig src="previmew.jpg" />
 </p>
 
 ### Information 
