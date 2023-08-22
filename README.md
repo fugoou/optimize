@@ -40,12 +40,12 @@ E.g 2 : com.nexon.bluearchive,com.supercell.clashofclans,com
 ## Preview
 
 <p align="center">
-  <img alig src="previmew.gif" />
+  <img alig src="preview.gif" />
 </p>
 
 ### Information 
 For Now support architecture 32 bit, because I'm encrypt with 32 bit, can't swith 32 bit to 64 bit bruh, but can switch 64 bit to 32 bit, latter new update I'm create for 64 bit & 32 bit :)
-if you have solution chat me in [Telegram](t.me/xchillds)
+if you have solution chat me in [Telegram](https://t.me/xchillds)
 <p align="center">
   <img alig src="temporinfor.jpg" />
 </p>
