@@ -8,10 +8,10 @@
   <br>
 
 * Optimize CPU, GPU, FPS, & Network
-* Vulkan render with layer extension fast render VK
+* Vulkan render
 * Change Light theme for performance
 * Kill-all activity
-* Multi-depth composition
+* GFX composition
 * Improve Idle drain
 * Improve touch ( 250 press timeout )
 * Trim Cache
@@ -21,6 +21,16 @@
 * Disable Thermal service override
 * Disable AA
 * Game Driver Android 11 & 12+
+* Game Overlay Config Downscale
+* Cloud flare DNS
+* Menu All-in-one
+* Menu Custom Game Overlay Config FPS Android 13
+* Menu Custom DNS
+* Menu Custom Animation & Duration Scale
+* Menu Custom FPS
+* Menu Fullscreen and impressive getsure
+* Menu JIT optimization all apps
+* Menu Dexopt background job
 * and more...
 
 </details>
@@ -29,7 +39,7 @@
   <summary>Preview
   </summary>
   <br>
-https://youtu.be/Sv4cmi8Ffg8?si=BBY1xcja8vA_dLHx
+https://youtu.be/
 </details>
 
 ## How to Execute Script??
