@@ -1,1 +1,0 @@
-com.nexon.bluearchive,com.supercell.clashofclans,com.YoStar.AetherGazer,es.socialpoint.DragonCity
