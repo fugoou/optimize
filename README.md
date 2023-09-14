@@ -40,7 +40,7 @@
   <summary>Preview
   </summary>
   <br>
-https://youtu.be/https://youtu.be/0tgFSxkmPP0?si=1rDh1dXJb8Paej5J
+https://youtu.be/0tgFSxkmPP0?si=1rDh1dXJb8Paej5J
 </details>
 
 ## How to Execute Script??
