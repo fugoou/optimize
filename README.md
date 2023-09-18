@@ -9,9 +9,8 @@
 
 * Optimize CPU, GPU, FPS, & Network
 * Vulkan render
-* Change Light theme for performance
 * Kill-all activity
-* GFX composition
+* GPU composition
 * Improve Idle drain
 * Improve touch ( 250 press timeout )
 * Trim Cache
@@ -20,9 +19,7 @@
 * Enable Fixed-performance mode
 * Disable Thermal service override
 * Disable AA
-* Game Overlay Config Downscale
 * Cloud Flare DNS
-* Menu All-in-one
 * Menu Custom Game_Overlay Config Downscale
 * Menu Custom DNS
 * Menu Custom Animation & Duration Scale
@@ -31,7 +28,11 @@
 * Menu JIT optimization all apps
 * Menu Dexopt background job
 * Menu Custom Hold Delay
+* Menu Custom Fstrim Interval
+* Menu Custom Renderer
+* Menu Disable & Enable App
 * Menu Game Driver
+* Menu Write Custom Settings
 * and more...
 
 </details>
@@ -40,7 +41,7 @@
   <summary>Preview
   </summary>
   <br>
-https://youtu.be/0tgFSxkmPP0?si=1rDh1dXJb8Paej5J
+https://youtu.be/
 </details>
 
 ## How to Execute Script??
