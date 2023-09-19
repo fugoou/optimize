@@ -21,6 +21,7 @@
 * Disable AA
 * Cloud Flare DNS
 * Menu Custom Game_Overlay Config Downscale
+* Menu Custom Game_Overlay Config FPS
 * Menu Custom DNS
 * Menu Custom Animation & Duration Scale
 * Menu Custom FPS
@@ -41,7 +42,7 @@
   <summary>Preview
   </summary>
   <br>
-https://youtu.be/
+https://t.me/fug00u/107
 </details>
 
 ## How to Execute Script??
