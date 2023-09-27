@@ -7,6 +7,7 @@
   </summary>
   <br>
 
+> In Tweak
 * Optimize CPU, GPU, FPS, & Network
 * Vulkan render
 * Kill-all activity
@@ -19,9 +20,18 @@
 * Enable Fixed-performance mode
 * Disable Thermal service override
 * Disable AA
+* Game Overlay Config Downscale
 * Cloud Flare DNS
+* Improve Audio Experience
+* Disable Motion Engines
+* Disable Screen Saver
+* Disable Smart Stay
+* Disable Bixby Pregranted Permissions​
+* Disable Samsung Cross-Device Sync​
+* Improve Apps Launch
+* and more...
+> Others menu
 * Menu Custom Game_Overlay Config Downscale
-* Menu Custom Game_Overlay Config FPS
 * Menu Custom DNS
 * Menu Custom Animation & Duration Scale
 * Menu Custom FPS
@@ -34,15 +44,16 @@
 * Menu Disable & Enable App
 * Menu Game Driver
 * Menu Write Custom Settings
-* and more...
+* Menu Enable & Disable Night mode
+* Menu Custom Display Size
 
 </details>
 
 <details>
-  <summary>Preview
+  <summary>Review
   </summary>
   <br>
-https://t.me/fug00u/107
+https://
 </details>
 
 ## How to Execute Script??
