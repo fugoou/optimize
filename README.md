@@ -53,7 +53,7 @@
   <summary>Review
   </summary>
   <br>
-https://
+https://t.me/c/1646037481/816
 </details>
 
 ## How to Execute Script??
