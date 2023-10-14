@@ -7,7 +7,7 @@
   </summary>
   <br>
 
-> In Tweak
+> In menu Tweak
 * Optimize CPU, GPU, FPS, & Network
 * Vulkan render
 * Kill-all activity
