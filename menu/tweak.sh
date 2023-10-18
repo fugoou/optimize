@@ -534,29 +534,29 @@ sleep 0.5
 for global in "${globals[@]}"; do
 settings put --user current global $global
 done
-logcat -c > /dev/null 2>&1
-dumpsys deviceidle whitelist +com.android.systemui > /dev/null 2>&1
-dumpsys power set_sampling_rate 0 > /dev/null 2>&1
-cmd activity kill-all > /dev/null 2>&1
-am kill-all > /dev/null 2>&1
+logcat -c
+dumpsys deviceidle whitelist +com.android.systemui
+dumpsys power set_sampling_rate 0
+cmd activity kill-all
+am kill-all
 pm trim-caches 99999G
 cmd thermalservice override-status 0
 cmd netpolicy set restrict-background false
-am broadcast -a android.intent.action.ACTION_OPTIMIZE_DEVICE > /dev/null 2>&1
-am broadcast -a android.intent.action.SET_SCREEN_REFRESH_RATE -e refreshRate 120 -e fpsMode fixed > /dev/null 2>&1
-rm -f /storage/emulated/0/Pictures/.thumbnails/* > /dev/null 2>&1
-rm -f /storage/emulated/0/Movies/.thumbnails/* > /dev/null 2>&1
-rm -f /data/local/traces/* > /dev/null 2>&1
-am force-stop com.google.android.ims > /dev/null 2>&1
-am force-stop com.google.android.gms > /dev/null 2>&1
-cmd appops set com.google.android.gms RUN_IN_BACKGROUND ignore > /dev/null 2>&1
-cmd appops set com.google.android.gms RUN_ANY_IN_BACKGROUND ignore > /dev/null 2>&1
-cmd appops set com.google.android.gms START_FOREGROUND ignore > /dev/null 2>&1
-cmd appops set com.google.android.gms INSTANT_APP_START_FOREGROUND ignore > /dev/null 2>&1
-cmd appops set com.google.android.ims RUN_IN_BACKGROUND ignore > /dev/null 2>&1
-cmd appops set com.google.android.ims RUN_ANY_IN_BACKGROUND ignore > /dev/null 2>&1
-cmd appops set com.google.android.ims START_FOREGROUND ignore > /dev/null 2>&1
-cmd appops set com.google.android.ims INSTANT_APP_START_FOREGROUND ignore > /dev/null 2>&1
+am broadcast -a android.intent.action.ACTION_OPTIMIZE_DEVICE
+am broadcast -a android.intent.action.SET_SCREEN_REFRESH_RATE -e refreshRate 120 -e fpsMode fixed
+rm -f /storage/emulated/0/Pictures/.thumbnails/*
+rm -f /storage/emulated/0/Movies/.thumbnails/*
+rm -f /data/local/traces/*
+am force-stop com.google.android.ims
+am force-stop com.google.android.gms
+cmd appops set com.google.android.gms RUN_IN_BACKGROUND ignore
+cmd appops set com.google.android.gms RUN_ANY_IN_BACKGROUND ignore
+cmd appops set com.google.android.gms START_FOREGROUND ignore
+cmd appops set com.google.android.gms INSTANT_APP_START_FOREGROUND ignore
+cmd appops set com.google.android.ims RUN_IN_BACKGROUND ignore
+cmd appops set com.google.android.ims RUN_ANY_IN_BACKGROUND ignore
+cmd appops set com.google.android.ims START_FOREGROUND ignore
+cmd appops set com.google.android.ims INSTANT_APP_START_FOREGROUND ignore
 cmd power set-fixed-performance-mode-enabled true
 cmd power set-adaptive-power-saver-enabled false
 cmd power set-mode 0
@@ -585,7 +585,7 @@ device_config put activity_manager force_high_refresh_rate true
 device_config put activity_manager min_frame_duration_ms 8
 device_config put activity_manager max_phantom_processes 2147483647
 device_config put activity_manager max_cached_processes 256
-device_config set_sync_disabled_for_tests persistent
+device_config put activity_manager set_sync_disabled_for_tests persistent
 device_config put activity_manager max_empty_time_millis 43200000
 device_config put activity_manager window_focus_timeout 500
 device_config put activity_manager render_thread_priority HIGH
@@ -631,7 +631,7 @@ device_config put surfaceflinger surfaceflinger.layers.max 100
 device_config put surfaceflinger surfaceflinger.layers.default 10
 device_config put surfaceflinger set_max_frame_rate_multiplier 0.5
 }
-fugoou #> /dev/null 2>&1
+fugoou > /dev/null 2>&1
 echo ""
 echo ""
 echo "Install completed!"
@@ -647,7 +647,7 @@ echo ""
 animate_typing "Uninstalling Tweak performance+ ${version}" "42"
 xchillds() { settings delete global device_idle_constants; settings delete system peak_refresh_rate; settings delete system min_refresh_rate; settings delete global peak_refresh_rate; settings delete global min_refresh_rate; settings delete system user_refresh_rate; settings delete global dalvik.vm.dex2oat-threads; settings delete global user_refresh_rate; settings delete system max_refresh_rate; settings delete global max_refresh_rate; settings delete system fod_animation_type; settings delete secure refresh_rate_mode; settings delete global zen_mode; settings delete secure long_press_timeout; settings delete global notification_linger_duration; settings delete global touch_calibration; settings delete system touch_sensitivity; settings delete global gaming_mode_enabled; settings delete global performance_mode; settings delete system thermal_limit_refresh_rate; settings delete secure wallpaper_mode; settings delete global display_smooth_scale; settings delete global hardware_accelerated_rendering_enabled; settings delete secure heat_cooldown_schedule; settings delete global online_manual_url; settings delete global power_save_mode; settings delete system sound_effects_enabled; settings delete system tube_amp_effect; settings delete system k2hd_effect; settings delete global adaptive_battery_management_enabled; settings delete system rakuten_denwa; settings delete system remote_control; settings delete system send_security_reports; settings delete system screen_auto_brightness_adj; settings delete global bixby_pregranted_permissions; settings delete system intelligent_sleep_mode; settings delete secure adaptive_sleep; settings delete secure screensaver_enabled; settings delete secure screensaver_activate_on_sleep; settings delete secure screensaver_activate_on_dock; settings delete secure double_tap_to_wake; settings delete secure double_tap_to_wake_up; settings delete secure double_tap_to_sleep; settings delete secure wake_gesture_enabled; settings delete system lift_to_wake; settings delete secure volume_hush_gesture; settings delete secure hush_gesture_used; settings delete secure silence_gesture; settings delete secure skip_gesture; settings delete system mcf_continuity; settings delete system mcf_continuity_permission_denied; settings delete system mcf_permission_denied; settings delete system master_motion; settings delete system motion_engine; settings delete system air_motion_engine; settings delete system air_motion_wake_up; settings delete global ble_scan_always_enabled; settings delete system nearby_scanning_enabled; settings delete system nearby_scanning_permission_allowed; settings delete global adaptive_battery_management_enabled; settings delete global mode_display; settings delete global sem_enchanced_cpu_responsiveness; settings delete global enhanced_processing; settings delete global force_hw_ui; settings delete global cpu.core_speeds.cluster0; settings delete global cpu.core_speeds.cluster1; settings delete global 2d.physics_engine; settings delete global 3d.physics_engine; settings delete global cpu.core_speeds.cluster2; settings delete system adaptive_refresh_rate; settings delete secure allow_heat_cooldown_schedule; settings delete system dalvik.vm.heapgrowthlimit; settings delete global wifi_scan_always_enabled; settings delete secure allow_heat_cooldown_always; settings delete global tether_dun_required; settings delete global edge_pdn; settings delete global gpu_texture_cache_size; settings delete secure ssl_session_cache; settings delete global force_gpu_rendering; settings delete global restricted_device_performance; settings delete global app_standby_enabled; settings delete global GPUTUNER_SWITCH; settings delete global oneplus_screen_refresh_rate; settings delete global CPUTUNER_SWITCH; settings delete secure coloros_screen_refresh_rate; settings delete secure allow_more_heat_value; settings delete global fps_divisor; settings delete global volte_vt_enabled; settings delete system adaptive_fast_charging; settings delete global default_refresh_rate; settings delete system default_refresh_rate; settings delete system force_gpu_vsync; settings delete global fancy_ime_animations; settings delete global download_manager_max_bytes_over_mobile; settings delete system min_frame_rate; settings delete system max_frame_rate; settings delete system mcf_continuity; settings delete global cached_apps_freezer; settings delete system multicore_packet_scheduler; settings delete system hdr_effect; settings delete system perf_profile; settings delete global performance.cache_size; settings delete global set_sync_disabled_for_tests; settings delete system ro.config.hw_quickpoweron; settings delete system ring.delay; settings delete system logcat.live; media.stagefright.enable-player; settings delete system stagefright.enable-meta; settings delete system stagefright.enable-scan; settings delete system stagefright.enable-http; settings delete system stagefright.enable-aac; settings delete system stagefright.enable-qcp; settings delete system stagefright.enable-record; settings delete system debug.gr.swapinterval; settings delete system haptic_feedback_enabled; settings delete system hw3d.force; settings delete system mpq.audio.decode; settings delete system net.rmnet0.dns1; settings delete system net.rmnet0.dns2; settings delete system net.dns1; settings delete system net.dns2; settings delete system net.ppp0.dns1; settings delete system net.ppp0.dns2; settings delete system net.wlan0.dns1; settings delete system net.wlan0.dns2; settings delete system net.eth0.dns1; settings delete system net.eth0.dns2; settings delete system net.gprs.dns1; settings delete system net.gprs.dns2; settings delete global performance.mode; settings delete system touch.pressure.scale; settings delete system debug.sf.late.sf.duration; settings delete global ble_scan_always_enabled; settings delete global hardware_accelerated_video_decode; settings delete global hardware_accelerated_video_encode; settings delete global hardware_accelerated_graphics_decoding; settings delete system nearby_scanning_enabled; settings delete system nearby_scanning_permission_allowed; settings delete global wifi.supplicant_scan_interval; settings delete global hidden_api_policy; settings delete global gpu_renderer; settings delete system call_ring_delay; settings delete global windowsmgr.max_events_per_sec; settings delete system mot.proximity.delay; settings delete global network_preference; settings delete secure location_mode; settings delete global battery_saver_mode; settings delete system windowsmgr.support_rotation_270; settings delete global dev.pm.dyn_samplingrate; settings delete secure multi_press_timeout; settings delete global private_dns_mode; settings delete global private_dns_specifier; settings delete global thread_priority; settings delete global battery_performance_mode; settings delete secure tap_duration_threshold; settings delete global low_power; settings delete global low_power_sticky; settings delete system pointer_speed; settings delete secure touch_blocking_period; settings delete global zen_mode_config_etag; settings delete global sem_enhanced_cpu_responsiveness; settings delete global job_scheduler_constants; settings delete global job_scheduler_quota_controller_constants; settings delete global NON_DISPATCHABLE_HANDLE; settings delete system gpu_mode; settings delete secure ui_night_mode; settings delete global fstrim_mandatory_interval; settings delete global enable_gpu_debug_layers; settings delete global gpu_debug_layers; settings delete secure tts_default_pitch; cmd appops reset com.google.android.gms; cmd appops reset com.google.android.ims
 }
-xchillds #> /dev/null 2>&1
+xchillds > /dev/null 2>&1
 echo ""
 echo ""
 echo "Uninstall completed! Reboot your phone!"
