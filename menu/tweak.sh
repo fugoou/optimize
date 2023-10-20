@@ -269,10 +269,10 @@ settprops=(
 "debug.sf.disable_client_composition_cache 1"
 "debug.sf.disable_hwc 0"
 "debug.sf.dump 0"
-"debug.sf.early.app.duration 16500000"
-"debug.sf.early.sf.duration 16000000"
-"debug.sf.earlyGl.app.duration 21000000"
-"debug.sf.earlyGl.sf.duration 13500000"
+"debug.sf.early.app.duration 8250000"
+"debug.sf.early.sf.duration 8000000"
+"debug.sf.earlyGl.app.duration 10500000"
+"debug.sf.earlyGl.sf.duration 6750000"
 "debug.sf.early_app_phase_offset_ns 500000"
 "debug.sf.early_gl_app_phase_offset_ns 0"
 "debug.sf.early_gl_phase_offset_ns 0"
@@ -294,8 +294,8 @@ settprops=(
 "debug.sf.hw 0"
 "debug.sf.hwc.min.duration 0"
 "debug.sf.latch_unsignaled 1"
-"debug.sf.late.app.duration 20500000"
-"debug.sf.late.sf.duration 10500000"
+"debug.sf.late.app.duration 10250000"
+"debug.sf.late.sf.duration 5250000"
 "debug.sf.max_igbp_list_size 0"
 "debug.sf.min-frame_rate_multiple_threshold 3"
 "debug.sf.perf_fps_early_gl_phase_offset_ns 10000000"
@@ -631,7 +631,7 @@ device_config put surfaceflinger surfaceflinger.layers.max 100
 device_config put surfaceflinger surfaceflinger.layers.default 10
 device_config put surfaceflinger set_max_frame_rate_multiplier 0.5
 }
-fugoou > /dev/null 2>&1
+fugoou #> /dev/null 2>&1
 echo ""
 echo ""
 echo "Install completed!"
