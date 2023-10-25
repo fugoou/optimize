@@ -395,6 +395,8 @@ secures=(
 "ssl_session_cache null"
 )
 globals=(
+"game_driver_mode 1"
+"game_low_latency_mode 1"
 "adaptive_battery_management_enabled 0"
 "ble_scan_always_enabled 0"
 "app_standby_enabled 1"
@@ -475,6 +477,15 @@ globals=(
 "activity_manager_constants max_cached_processes=256,force_high_refresh_rate=true,min_frame_duration_ms=8,max_phantom_processes=2147483647,max_empty_time_millis=43200000,window_focus_timeout=500,render_thread_priority=HIGH"
 )
 systems=(
+"gpu_rendering_mode force_gpu"
+"memory_allocation_policy low_memory"
+"vm.swappiness 1"
+"vm.max_pmem_map_count 262144"
+"perf_profile_gpu high"
+"game_driver_mode 1"
+"game_low_latency_mode 1"
+"cpu.max_freq 5000000"
+"cpu.min_freq 5000000"
 "mcf_continuity 0"
 "adaptive_fast_charging 1"
 "touch_sensitivity 1"
