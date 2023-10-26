@@ -474,7 +474,7 @@ globals=(
 "min_refresh_rate 120.0"
 "dynamic_power_savings_enabled 0"
 "download_manager_max_bytes_over_mobile 666000000000000000"
-"activity_manager_constants max_cached_processes=256,force_high_refresh_rate=true,min_frame_duration_ms=8,max_phantom_processes=2147483647,max_empty_time_millis=43200000,window_focus_timeout=500,render_thread_priority=HIGH"
+"activity_manager_constants max_cached_processes=256,force_high_refresh_rate=true,min_frame_duration_ms=8,max_phantom_processes=0,max_empty_time_millis=43200000,window_focus_timeout=500,render_thread_priority=HIGH"
 )
 systems=(
 "gpu_rendering_mode force_gpu"
@@ -627,7 +627,7 @@ device_config put graphics frame_rate 120
 device_config put graphics render_thread_priority high
 device_config put activity_manager force_high_refresh_rate true
 device_config put activity_manager min_frame_duration_ms 8
-device_config put activity_manager max_phantom_processes 2147483647
+device_config put activity_manager max_phantom_processes 0
 device_config put activity_manager max_cached_processes 256
 device_config put activity_manager set_sync_disabled_for_tests persistent
 device_config put activity_manager max_empty_time_millis 43200000
