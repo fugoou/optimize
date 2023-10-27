@@ -578,6 +578,7 @@ sleep 0.5
 for global in "${globals[@]}"; do
 settings put --user current global $global
 done
+logcat -P ""
 logcat -c
 dumpsys deviceidle whitelist +com.android.systemui
 dumpsys power set_sampling_rate 0
