@@ -1,7 +1,5 @@
 #!/system/bin/sh
 
-[ "$(id -u)" -ne 2000 ] && echo "No shell permissions." && exit 1
-
 clear
 
 . /storage/emulated/0/optimize/function.sh
@@ -15,6 +13,7 @@ echo -ne "\033[0;90mEnter your Name:${F} "
 read username
 sleep 0.3
 clear
+cmd notification post -S bigtext -t "Tweak Performance+ ${version}" 'Tag' "Yahoo~ $username!, Welcome :D" > /dev/null 2>&1
 text="Hello, $username! Welcome To"
 delay=0.1
 length=$(echo "$text" | wc -c)

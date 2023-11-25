@@ -3,6 +3,7 @@
 author="@xchillds"
 version="v8.0-final"
 donate="https://saweria.co/fugoou"
+log="/sdcard/Android/fugoou.log"
 
 # colors
 F='\033[0m'
