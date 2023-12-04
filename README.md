@@ -46,6 +46,7 @@
 * Menu Write Custom Settings
 * Menu Enable & Disable Night mode
 * Menu Custom Display Size
+* Menu [Doze Tweak](https://github.com/easz/doze-tweak). Ty for @easz From GitHub.
 
 </details>
 
