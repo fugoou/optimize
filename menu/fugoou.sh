@@ -16,3 +16,4 @@
 . /storage/emulated/0/optimize/menu/jit.sh
 . /storage/emulated/0/optimize/menu/night_mode.sh
 . /storage/emulated/0/optimize/menu/tweak.sh
+. /storage/emulated/0/optimize/menu/doze_tweak.sh
