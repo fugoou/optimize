@@ -72,7 +72,8 @@ while true; do
     animate_typing "[ - ] Write Custom Settings [ 16 ]" "90"
     animate_typing "[ - ] Enable & Disable Night Mode [ 17 ]" "90"
     animate_typing "[ - ] Custom Display Size [ 18 ]" "90"
-    animate_typing "[ - ] Saweria [ 19 ]" "90"
+    animate_typing "[ - ] Doze Tweak [ 19 ]" "90"
+    animate_typing "[ - ] Saweria [ 20 ]" "90"
     animate_typing "[ - ] Quit [ 0 ]" "90"
     echo ""
     printf "\e[101m\e[1;77mNot all menu work, depending on the Android version!\e[0m\n"
@@ -135,6 +136,9 @@ while true; do
             custom_display_size
             ;;
         19)
+            doze_tweak
+            ;;
+        20)
             echo "Only Dana, Ga maksa kok, cuma buat penyemangat gw aja kalo ada orang yang mau support gw :)"
             sleep 1
             am start -a android.intent.action.VIEW -d ${donate} > /dev/null 2>&1
