@@ -59,7 +59,8 @@ https://t.me/c/1646037481/816
 
 ## How to Execute Script??
 
-in your terminal like termux, connect with adb first!
+> [!NOTE]
+> in your terminal like termux, connect with adb first!
 after placing the file in the `/sdcard/optimize/` folder
 ```bash
 rm -rf /data/local/tmp/* && cp /sdcard/optimize/start.sh /data/local/tmp && cd /data/local/tmp/ && chmod 777 start.sh && ./start.sh
