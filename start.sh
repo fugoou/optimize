@@ -76,7 +76,7 @@ while true; do
     animate_typing "[ - ] Saweria [ 20 ]" "90"
     animate_typing "[ - ] Quit [ 0 ]" "90"
     echo ""
-    printf "\e[101m\e[1;77mNot all menu work, depending on the Android version!\e[0m\n"
+    echo -e "\e[41mNot all menu work, depending on the Android version!\e[0m"
     echo ""
     echo -ne "${G}Select: ${F}"
     read -s choice
