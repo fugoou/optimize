@@ -8,6 +8,17 @@ echo ""
 animate_typing "Installing Tweak performance+ ${version}" "42"
 fugoou () {
 settprops=(
+"debug.rs.debug 0"
+"debug.rs.rsov 0"
+"debug.rs.profile 0"
+"debug.rs.script 0"
+"debug.rs.shader 0"
+"debug.rs.shader.attributes 0"
+"debug.rs.shader.uniforms 0"
+"debug.rs.visual 0"
+"debug.rs.reduce 0"
+"debug.rs.reduce-split-accum 0"
+"debug.rs.max-threads 0"
 "debug.hwui.force_flush_of_tiles 0"
 "debug.sf.hwinterpolation 1"
 "debug.hwui.force_gpu_dithering true"
@@ -298,12 +309,9 @@ settprops=(
 "debug.rs.forcecompat 0"
 "debug.rs.max-freq 5000000000"
 "debug.rs.max-temp_tolerance 80"
-"debug.rs.max-threads 8"
 "debug.rs.min-freq 5000000000"
 "debug.rs.min-perf_percent 100"
-"debug.rs.min-threads 16"
 "debug.rs.precision rs_fp_full"
-"debug.rs.script 1"
 "debug.scenegraph.batching_performance 1"
 "debug.sched.colocate.enable 1"
 "debug.sdm.support_writeback 1"
@@ -598,8 +606,6 @@ logcat -P ""
 logcat -c
 dumpsys deviceidle whitelist +com.android.systemui
 dumpsys power set_sampling_rate 0
-cmd activity kill-all
-am kill-all
 pm trim-caches 99999G
 cmd thermalservice override-status 0
 cmd netpolicy set restrict-background false
@@ -693,12 +699,14 @@ device_config put surfaceflinger surfaceflinger.vsync.interpolation false
 device_config put surfaceflinger surfaceflinger.layers.max 100
 device_config put surfaceflinger surfaceflinger.layers.default 10
 device_config put surfaceflinger set_max_frame_rate_multiplier 0.5
+cmd activity kill-all
+am kill-all
 }
 fugoou > /dev/null 2>&1
 echo ""
 echo ""
 echo "Install completed!"
-printf "\e[101m\e[1;77mDWYOR!\e[0m\n"
+echo -e "\e[41mDWYOR!\e[0m"
 echo ""
 echo -e "any issues? ${G}https://github.com/fugoou/optimize/issues${F}"
 echo -e "pull request ${G}https://github.com/fugoou/optimize/pulls${F}"
