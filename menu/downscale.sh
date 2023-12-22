@@ -15,7 +15,13 @@ new_width=$(printf "%.0f" $(echo "$width * $scale_factor" | bc -l))
 new_height=$(printf "%.0f" $(echo "$height * $scale_factor" | bc -l))
 new_resolution="${new_width}x${new_height}"
 
-echo -ne "${G}are you sure you want to change the resolution to $new_resolution? if yes, enter [Y]:${F} "
+echo "this is preview of resolution $new_resolution, will reset again after 5 seconds"
+sleep 1
+wm size $new_resolution
+sleep 5
+wm size reset
+
+echo -ne "${G}are you sure you want to change the resolution to $new_resolution? if yes, enter [ Y ], otherwise type anything except Y:${F} "
 read -s choice
 if [ "$choice" == "Y" ]; then
   wm size $new_resolution
