@@ -32,6 +32,7 @@
 * and more...
 > Others menu
 * Menu Custom Game_Overlay Config Downscale
+• Menu Custom Game_Overlay Config FPS
 * Menu Custom DNS
 * Menu Custom Animation & Duration Scale
 * Menu Custom FPS
