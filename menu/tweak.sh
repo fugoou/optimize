@@ -60,15 +60,15 @@ settprops=(
 "debug.hwui.render_dirty_region_size 1"
 "debug.composition.sync_mode 0"
 "debug.force_fps 120"
-"log.tag ''"
-"log.tag.debug ''"
-"log.tag.logcat ''"
-"log.tag.android ''"
-"log.tag.adb ''"
-"log.tag.ALL ''"
-"log.tag.APM_AudioPolicyManager ''"
-"log.tag.stats_log ''"
-"log.tag.BatchInternal ''"
+"debug.hwui.profile.maxframes 120"
+"log.tag SUPPRESS"
+"log.tag.debug SUPPRESS"
+"log.tag.logcat SUPPRESS"
+"log.tag.android SUPPRESS"
+"log.tag.adb SUPPRESS"
+"log.tag.APM_AudioPolicyManager SUPPRESS"
+"log.tag.stats_log SUPPRESS"
+"log.tag.BatchInternal SUPPRESS"
 "debug.heat_suppression 0"
 "debug.egl.callstack 0"
 "debug.composition.type mdp"
@@ -615,7 +615,9 @@ logcat -P ""
 logcat -c
 dumpsys deviceidle whitelist +com.android.systemui
 dumpsys power set_sampling_rate 0
-pm trim-caches 99999G
+pm trim-caches 999G
+cmd display ab-logging-disable
+cmd display dwb-logging-disable
 cmd thermalservice override-status 0
 cmd netpolicy set restrict-background false
 am broadcast -a android.intent.action.ACTION_OPTIMIZE_DEVICE
