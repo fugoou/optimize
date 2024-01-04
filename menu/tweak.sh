@@ -511,7 +511,7 @@ globals=(
 "min_refresh_rate 120.0"
 "dynamic_power_savings_enabled 0"
 "download_manager_max_bytes_over_mobile 666000000000000000"
-"activity_manager_constants max_cached_processes=256,min_frame_duration_ms=8,max_phantom_processes=0,max_empty_time_millis=43200000,window_focus_timeout=500,power_check_max_cpu_1=0,power_check_max_cpu_2=0,power_check_max_cpu_3=0,power_check_max_cpu_4=0,power_check_interval=0"
+"activity_manager_constants max_cached_processes=256,min_frame_duration_ms=8,max_phantom_processes=0,max_empty_time_millis=43200000,window_focus_timeout=500,power_check_max_cpu_1=0,power_check_max_cpu_2=0,power_check_max_cpu_3=0,power_check_max_cpu_4=0"
 )
 systems=(
 "background_power_saving_enable 0"
@@ -663,7 +663,6 @@ device_config put device_idle max_idle_to 21600000
 device_config put device_idle idle_factor 2
 device_config put device_idle wait_for_unlock true
 device_config put input filtered_accel_event_rate_hz 400
-device_config put activity_manager power_check_interval 0
 device_config put activity_manager power_check_max_cpu_1 0
 device_config put activity_manager power_check_max_cpu_2 0
 device_config put activity_manager power_check_max_cpu_3 0
