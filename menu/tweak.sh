@@ -8,6 +8,7 @@ echo ""
 animate_typing "Installing Tweak performance+ ${version}" "42"
 fugoou () {
 settprops=(
+"debug.level 0"
 "debug.rs.debug 0"
 "debug.rs.rsov 0"
 "debug.rs.profile 0"
@@ -71,7 +72,7 @@ settprops=(
 "log.tag.BatchInternal SUPPRESS"
 "debug.heat_suppression 0"
 "debug.egl.callstack 0"
-"debug.composition.type mdp"
+"debug.composition.type dyn"
 "debug.hwui.composition 0"
 "debug.dev.addfree 4"
 "debug.OVRManager.cpuLevel 2"
@@ -258,8 +259,8 @@ settprops=(
 "debug.hwui.target_gpu_time_percent 200"
 "debug.hwui.target_power_time_percent 200"
 "debug.sf.layer_smoothness 5"
-"debug.hwui.use_buffer_age true"
-"debug.hwui.use_gpu_pixel_buffers true"
+"debug.hwui.use_buffer_age false"
+"debug.hwui.use_gpu_pixel_buffers false"
 "debug.hwc.force_gpu_reset_on_hotplug true"
 "debug.hwc.force_gpu_reset_on_change true"
 "debug.hwc.force_gpu_reset_on_vsync true"
@@ -287,7 +288,9 @@ settprops=(
 "debug.cpufreq.min_freq 5000000"
 "debug.multicore.processing 1"
 "debug.oculus.refreshRate 120.0"
-"debug.overlayui.enable 1"
+"debug.overlayui.enable 0"
+"debug.mono.log none"
+"debug.use_app_native 0"
 "debug.perfhudes 1"
 "debug.performance.force_high_fps true"
 "debug.performance.accoustic.force true"
@@ -473,14 +476,13 @@ globals=(
 "cpu.core_speeds.cluster1 5600000"
 "cpu.core_speeds.cluster2 5600000"
 "private_dns_mode hostname"
-"private_dns_specifier 1dot1dot1dot1.cloudflare-dns.com"
+"private_dns_specifier one.one.one.one"
 "windowsmgr.max_events_per_sec 240"
 "default_refresh_rate 120"
 "dev.pm.dyn_samplingrate 1"
 "fps_divisor 1"
 "force_gpu_rendering 1"
 "network_preference 9"
-"pointer_speed 10"
 "volte_vt_enabled 1"
 "touch_calibration 1"
 "force_hw_ui 1"
@@ -509,9 +511,12 @@ globals=(
 "min_refresh_rate 120.0"
 "dynamic_power_savings_enabled 0"
 "download_manager_max_bytes_over_mobile 666000000000000000"
-"activity_manager_constants max_cached_processes=256,force_high_refresh_rate=true,min_frame_duration_ms=8,max_phantom_processes=0,max_empty_time_millis=43200000,window_focus_timeout=500,render_thread_priority=FORCECOPY,power_check_max_cpu_1=0,power_check_max_cpu_2=0,power_check_max_cpu_3=0,power_check_max_cpu_4=0"
+"activity_manager_constants max_cached_processes=256,min_frame_duration_ms=8,max_phantom_processes=0,max_empty_time_millis=43200000,window_focus_timeout=500,power_check_max_cpu_1=0,power_check_max_cpu_2=0,power_check_max_cpu_3=0,power_check_max_cpu_4=0,power_check_interval=0"
 )
 systems=(
+"background_power_saving_enable 0"
+"touch.size.calibration geometric"
+"touch.pressure.calibration amplitude"
 "gpu_rendering_mode force_gpu"
 "memory_allocation_policy low_memory"
 "vm.swappiness 1"
@@ -658,6 +663,7 @@ device_config put device_idle max_idle_to 21600000
 device_config put device_idle idle_factor 2
 device_config put device_idle wait_for_unlock true
 device_config put input filtered_accel_event_rate_hz 400
+device_config put activity_manager power_check_interval 0
 device_config put activity_manager power_check_max_cpu_1 0
 device_config put activity_manager power_check_max_cpu_2 0
 device_config put activity_manager power_check_max_cpu_3 0
@@ -678,38 +684,6 @@ device_config put activity_manager background_service_keep_alive_time_ms 5000
 device_config put systemui window_cornerRadius 0
 device_config put systemui window_blur 0
 device_config put systemui window_shadow 0
-device_config put dalvik dalvik.vm.verify-bytecode false
-device_config put dalvik dalvik.vm.execution-mode int:fast
-device_config put dalvik dalvik.vm.checkjni false
-device_config put dalvik dalvik.vm.dexopt-data-only 1
-device_config put dalvik dalvik.vm.heapstartsize 1m
-device_config put dalvik dalvik.vm.heapgrowthlimit 4g
-device_config put dalvik dalvik.vm.heapsize 256m
-device_config put dalvik dalvik.vm.verify-bytecode false
-device_config put dalvik dalvik.vm.execution-mode int:jit
-device_config put dalvik dalvik.vm.lockprof.threshold 250
-device_config put dalvik dalvik.vm.dexopt-flags m=y
-device_config put dalvik dalvik.vm.jmiopts forcecopy
-device_config put dalvik dalvik.vm.dex2oat-enabled true
-device_config put dalvik dalvik.vm.usejit true
-device_config put dalvik dalvik.vm.dex2oat64.enabled true
-device_config put dalvik dalvik.vm.image-dex2oat-filter everything
-device_config put dalvik dalvik.vm.image-dex2oat-threads 8
-device_config put dalvik dalvik.vm.image-dex2oat-cpu-set 0,1,2,3,4,5,6,7
-device_config put dalvik dalvik.vm.dex2oat-filter quicken
-device_config put dalvik dalvik.vm.dex2oat-threads 8
-device_config put dalvik dalvik.vm.dex2oat-cpu-set 0,1,2,3,4,5,6,7
-device_config put dalvik dalvik.vm.boot-dex2oat-threads 8
-device_config put dalvik dalvik.vm.boot-dex2oat-cpu-set 0,1,2,3,4,5,6,7
-device_config put dalvik dalvik.vm.jitthreshold 2500
-device_config put dalvik dalvik.vm.jittransitionweight 333
-device_config put dalvik dalvik.vm.jitprithreadweight 333
-device_config put surfaceflinger surfaceflinger.vsync.enable true
-device_config put surfaceflinger surfaceflinger.vsync.timeout 10
-device_config put surfaceflinger surfaceflinger.vsync.interpolation false
-device_config put surfaceflinger surfaceflinger.layers.max 100
-device_config put surfaceflinger surfaceflinger.layers.default 10
-device_config put surfaceflinger set_max_frame_rate_multiplier 0.5
 cmd activity kill-all
 am kill-all
 }
