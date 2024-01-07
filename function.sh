@@ -7,6 +7,7 @@ log="/sdcard/Android/fugoou.log"
 F='\033[0m'
 G='\033[0;32m'
 R='\033[0;31m'
+N='\033[0;90m'
 
 # device information
 uptime=$(uptime)
