@@ -3,7 +3,7 @@ echo ""
 echo ""
 animate_typing "[ - ] Android 11 [ 1 ]" "90"
 animate_typing "[ - ] Android 12+ [ 2 ]" "90"
-animate_typing "[ - ] Reset to default [ 3 ]" "90"
+animate_typing "[ - ] Set to default [ 3 ]" "90"
 echo ""
 echo -ne "${G}Select: ${F}"
 read -s nakun
@@ -32,12 +32,15 @@ case $nakun in
             echo "Done!"
             ;;
         3)
+            drivel () {
             settings delete global game_driver_all_apps
             settings delete global game_driver_opt_out_apps
             settings delete global game_driver_opt_in_apps
             settings delete global updatable_driver_all_apps
             settings delete global updatable_driver_production_opt_out_apps
             settings delete global updatable_driver_production_opt_in_apps
+            }
+            drivel > /dev/null 2>&1
             echo ""
             echo "Done!"
             ;;

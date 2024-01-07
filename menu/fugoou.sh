@@ -6,15 +6,15 @@
 . /storage/emulated/0/optimize/menu/custom_hold_delay.sh
 . /storage/emulated/0/optimize/menu/custom_render.sh
 . /storage/emulated/0/optimize/menu/custom_settings.sh
-. /storage/emulated/0/optimize/menu/dexopt_background.sh
 . /storage/emulated/0/optimize/menu/enable_disable_app.sh
 . /storage/emulated/0/optimize/menu/fullscreen_immersive_getsure.sh
 . /storage/emulated/0/optimize/menu/game_driver.sh
 . /storage/emulated/0/optimize/menu/game_overlay_downscale.sh
 . /storage/emulated/0/optimize/menu/game_overlay_fps.sh
 . /storage/emulated/0/optimize/menu/game_performance.sh
-. /storage/emulated/0/optimize/menu/jit.sh
 . /storage/emulated/0/optimize/menu/night_mode.sh
 . /storage/emulated/0/optimize/menu/tweak.sh
 . /storage/emulated/0/optimize/menu/doze_tweak.sh
 . /storage/emulated/0/optimize/menu/downscale.sh
+. /storage/emulated/0/optimize/menu/monolith.sh
+. /storage/emulated/0/optimize/menu/cachie.sh
