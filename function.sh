@@ -1,5 +1,3 @@
-# you can rename it but don't forget to give credit to the original source, you can share this script with an advertising link but don't sell it
-
 author="@xchillds"
 version="v8.0-final"
 donate="https://saweria.co/fugoou"
