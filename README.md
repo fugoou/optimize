@@ -14,7 +14,7 @@
 * Menu Custom Animation & Duration Scale
 * Menu Custom FPS
 * Menu Fullscreen and impressive getsure
-* [Monolith](https://github.com/tytydraco/monolith). Ty for @tytydraco From github
+* [Monolith](https://github.com/tytydraco/monolith). Ty for @tytydraco From Github
 * Menu Custom Hold Delay
 * Menu Custom Fstrim Interval
 * Menu Custom Renderer
@@ -25,7 +25,7 @@
 * Menu Custom Display Size
 * Menu [Doze Tweak](https://github.com/easz/doze-tweak). Ty for @easz From GitHub.
 * Menu Custom Downscale
-* [Cachie](https://github.com/tytydraco/Cachie). Ty for @tytydraco From github
+* [Cachie](https://github.com/tytydraco/Cachie). Ty for @tytydraco From Github
 
 </details>
 
