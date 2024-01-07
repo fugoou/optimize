@@ -59,21 +59,21 @@ while true; do
     animate_typing "[ - ] Set Game Performance+ [ 3 ]" "90"
     animate_typing "[ - ] Game_Overlay config Downscale [ 4 ]" "90"
     animate_typing "[ - ] Game_Overlay config FPS [ 5 ]" "90"
-    animate_typing "[ - ] Dexopt background job all apps [ 6 ]" "90"
-    animate_typing "[ - ] JIT optimization all apps [ 7 ]" "90"
-    animate_typing "[ - ] Custom FPS [ 8 ]" "90"
-    animate_typing "[ - ] Custom Animation & Duration Scale [ 9 ]" "90"
-    animate_typing "[ - ] Custom DNS hostname [ 10 ]" "90"
-    animate_typing "[ - ] Custom Hold Delay [ 11 ]" "90"
-    animate_typing "[ - ] Game Driver Android 11 & 12+ [ 12 ]" "90"
-    animate_typing "[ - ] Custom Renderer [ 13 ]" "90"
-    animate_typing "[ - ] Custom Fstrim Interval [ 14 ]" "90"
-    animate_typing "[ - ] Disable & Enable App [ 15 ]" "90"
-    animate_typing "[ - ] Write Custom Settings [ 16 ]" "90"
-    animate_typing "[ - ] Enable & Disable Night Mode [ 17 ]" "90"
-    animate_typing "[ - ] Custom Display Size [ 18 ]" "90"
-    animate_typing "[ - ] Doze Tweak [ 19 ]" "90"
-    animate_typing "[ - ] Downscale [ 20 ]" "90"
+    animate_typing "[ - ] Monolith [ 6 ]" "90"
+    animate_typing "[ - ] Custom FPS [ 7 ]" "90"
+    animate_typing "[ - ] Custom Animation & Duration Scale [ 8 ]" "90"
+    animate_typing "[ - ] Custom DNS hostname [ 9 ]" "90"
+    animate_typing "[ - ] Custom Hold Delay [ 10 ]" "90"
+    animate_typing "[ - ] Game Driver Android 11 & 12+ [ 11 ]" "90"
+    animate_typing "[ - ] Custom Renderer [ 12 ]" "90"
+    animate_typing "[ - ] Custom Fstrim Interval [ 13 ]" "90"
+    animate_typing "[ - ] Disable & Enable App [ 14 ]" "90"
+    animate_typing "[ - ] Write Custom Settings [ 15 ]" "90"
+    animate_typing "[ - ] Enable & Disable Night Mode [ 16 ]" "90"
+    animate_typing "[ - ] Custom Display Size [ 17 ]" "90"
+    animate_typing "[ - ] Doze Tweak [ 18 ]" "90"
+    animate_typing "[ - ] Downscale [ 19 ]" "90"
+    animate_typing "[ - ] Cachie [ 20 ]" "90"
     animate_typing "[ - ] Saweria [ 21 ]" "90"
     animate_typing "[ - ] Quit [ 0 ]" "90"
     echo ""
@@ -98,52 +98,52 @@ while true; do
             game_overlay_fps
             ;;
         6)
-            dexopt_background
+            monolith
             ;;
         7)
-            jit
-            ;;
-        8)
             custom_fps
             ;;
-        9)
+        8)
             custom_animation_and_duration_scale
             ;;
-        10)
+        9)
             custom_dns
             ;;
-        11)
+        10)
             custom_hold_delay
             ;;
-        12)
+        11)
             game_driver
             ;;
-        13)
+        12)
             custom_render
             ;;
-        14)
+        13)
             custom_fstrim_interval
             ;;
-        15)
+        14)
             enable_disable_app
             ;;
-        16)
+        15)
             custom_settings
             ;;
-        17)
+        16)
             night_mode
             ;;
-        18)
+        17)
             custom_display_size
             ;;
-        19)
+        18)
             doze_tweak
             ;;
-        20)
+        19)
             downscale
             ;;
+        20)
+            cachie
+            ;;
         21)
-            echo "Only Dana, Ga maksa kok, cuma buat penyemangat gw aja kalo ada orang yang mau support gw :)"
+            echo " nly Dana, ga maksa kok, cuma buat penyemangat gw aja kalo ada orang yang mau support gw :)"
             sleep 1
             am start -a android.intent.action.VIEW -d ${donate} > /dev/null 2>&1
             ;; 
@@ -158,4 +158,4 @@ while true; do
 done
 else
     echo -e "${R}Password is incorrect. Access denied.${F}"
-fi 
+fi
