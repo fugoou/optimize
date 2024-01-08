@@ -7,7 +7,7 @@
   </summary>
   <br>
 
-* Tweak
+* Optimization Tweaks
 * Menu Custom Game_Overlay Config Downscale
 * Menu Custom Game_Overlay Config FPS
 * Menu Custom DNS
