@@ -1,6 +1,6 @@
 # Tweak Performance+ Without root
 
-> useful tweaks to improve the performance of your android, no root, just a terminal with adb connection
+> useful tweaks to improve the performance of your android and other tools, no-root, just a terminal with adb connection
 
 <details>
   <summary>Feature
