@@ -74,7 +74,8 @@ while true; do
     animate_typing "[ - ] Doze Tweak [ 18 ]" "90"
     animate_typing "[ - ] Downscale [ 19 ]" "90"
     animate_typing "[ - ] Cachie [ 20 ]" "90"
-    animate_typing "[ - ] Saweria [ 21 ]" "90"
+    animate_typing "[ - ] Swap [ 21 ]" "90"
+    animate_typing "[ - ] Saweria [ 22 ]" "90"
     animate_typing "[ - ] Quit [ 0 ]" "90"
     echo ""
     echo -e "\e[41mNot all menu work, depending on the Android version!\e[0m"
@@ -143,7 +144,10 @@ while true; do
             cachie
             ;;
         21)
-            echo " nly Dana, ga maksa kok, cuma buat penyemangat gw aja kalo ada orang yang mau support gw :)"
+            swap
+            ;;
+        22)
+            echo "only Dana, ga maksa kok, cuma buat penyemangat gw aja kalo ada orang yang mau support gw :)"
             sleep 1
             am start -a android.intent.action.VIEW -d ${donate} > /dev/null 2>&1
             ;; 
