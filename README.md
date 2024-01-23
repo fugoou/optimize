@@ -26,6 +26,7 @@
 * Menu [Doze Tweak](https://github.com/easz/doze-tweak). Ty for @easz From GitHub.
 * Menu Custom Downscale
 * [Cachie](https://github.com/tytydraco/Cachie). Ty for @tytydraco From Github
+* Swap
 
 </details>
 
