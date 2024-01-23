@@ -18,3 +18,4 @@
 . /storage/emulated/0/optimize/menu/downscale.sh
 . /storage/emulated/0/optimize/menu/monolith.sh
 . /storage/emulated/0/optimize/menu/cachie.sh
+. /storage/emulated/0/optimize/menu/swap.sh

@@ -24,7 +24,7 @@ sleep 5
 wm size reset
 
 echo ""
-echo -ne "${G}are you sure you want to change the resolution to $new_resolution? if yes, enter (y/n):${F} "
+echo -ne "${G}are you sure you want to change the resolution to $new_resolution? enter (y/n):${F} "
 read -s choice
 if [ "$choice" == "y" ]; then
   wm size $new_resolution
