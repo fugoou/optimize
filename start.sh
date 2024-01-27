@@ -147,7 +147,6 @@ while true; do
             swap
             ;;
         22)
-            echo "only Dana, ga maksa kok, cuma buat penyemangat gw aja kalo ada orang yang mau support gw :)"
             sleep 1
             am start -a android.intent.action.VIEW -d ${donate} > /dev/null 2>&1
             ;; 
